@@ -1,3 +1,9 @@
+import Sidebar from "./components/Sidebar";
+
 export default function App() {
-  return <div className=" w-full h-full">123</div>;
+  return (
+    <div className="relative flex h-full w-full">
+      <Sidebar />
+    </div>
+  );
 }

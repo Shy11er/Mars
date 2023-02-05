@@ -35,3 +35,8 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+@font-face {
+  font-family: "Mars";
+  src: url("./assets/Mars.ttf");
+}
