@@ -6,10 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:css": "tailwind build src/App.css -o src/index.css",
+    "watch:css": "chokidar 'src/App.css' -c 'npm run build:css'"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.13",
     "axios": "^1.3.2",
+    "flowbite": "^1.6.3",
+    "flowbite-react": "^0.3.8",
+    "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0"
