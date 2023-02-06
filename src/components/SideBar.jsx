@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { links } from "../assets/constants";
+import MobileLayout from "./MobileLayout";
 
 export const NavLinks = () => {
   const [isActive, setIsActive] = React.useState(0);
@@ -28,46 +29,46 @@ export const NavLinks = () => {
   );
 };
 
-const MobileLayout = ({ setIsMobile }) => {
-  const [clickBurg, setClickBurg] = React.useState(false);
+// export const MobileLayout = ({ setIsMobile }) => {
+//   const [clickBurg, setClickBurg] = React.useState(false);
 
-  return (
-    <div className="w-full h-6 flex absolute flex-row justify-end items-center p-8">
-      {clickBurg ? (
-        <Close
-          size={"30px"}
-          onClick={() => {
-            setClickBurg(false);
-          }}
-        />
-      ) : (
-        <Burger
-          size={"30px"}
-          // className="transition-transform duration-1000 ease-in-out active:rotate-90 "
-          onClick={() => {
-            setClickBurg(true);
-          }}
-        />
-      )}
-      {clickBurg && (
-        <div className="bg-black w-56 h-full flex flex-col justify-center items-center absolute top-0 left-0">
-          <h1
-            style={{
-              fontFamily: "Mars",
-              fontSize: "30px",
-              color: "#fff",
-              height: "40px",
-              marginBottom: "40px",
-            }}
-          >
-            MARS
-          </h1>
-          <NavLinks />
-        </div>
-      )}
-    </div>
-  );
-};
+//   return (
+//     <div className="absolute top-0 left-0">
+//       {clickBurg ? (
+//         <Close
+//           size={"30px"}
+//           onClick={() => {
+//             setClickBurg(false);
+//           }}
+//         />
+//       ) : (
+//         <Burger
+//           size={"30px"}
+//           // className="transition-transform duration-1000 ease-in-out active:rotate-90 "
+//           onClick={() => {
+//             setClickBurg(true);
+//           }}
+//         />
+//       )}
+//       {/* {clickBurg && (
+//         <div className="bg-black w-56 h-full flex flex-col justify-center items-center absolute top-0 left-0">
+//           <h1
+//             style={{
+//               fontFamily: "Mars",
+//               fontSize: "30px",
+//               color: "#fff",
+//               height: "40px",
+//               marginBottom: "40px",
+//             }}
+//           >
+//             MARS
+//           </h1>
+//           <NavLinks />
+//         </div>
+//       )} */}
+//     </div>
+//   );
+// };
 
 const SideBar = () => {
   const [isMobile, setIsMobile] = React.useState(true);
