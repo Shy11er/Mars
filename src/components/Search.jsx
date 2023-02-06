@@ -8,7 +8,7 @@ const Search = () => {
   const onSearch = () => {};
 
   return (
-    <div className="relative w-64 h-8">
+    <div className="relative w-64 h-10">
       <BiSearch
         size={26}
         className="absolute top-2 left-2 cursor-pointer"
