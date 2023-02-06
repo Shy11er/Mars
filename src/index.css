@@ -34,6 +34,7 @@ body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  background: linear-gradient(to right, #0f0c0c, rgb(33, 33, 167));
 }
 
 @font-face {
