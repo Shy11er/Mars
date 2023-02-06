@@ -29,70 +29,33 @@ export const NavLinks = () => {
   );
 };
 
-// export const MobileLayout = ({ setIsMobile }) => {
-//   const [clickBurg, setClickBurg] = React.useState(false);
-
-//   return (
-//     <div className="absolute top-0 left-0">
-//       {clickBurg ? (
-//         <Close
-//           size={"30px"}
-//           onClick={() => {
-//             setClickBurg(false);
-//           }}
-//         />
-//       ) : (
-//         <Burger
-//           size={"30px"}
-//           // className="transition-transform duration-1000 ease-in-out active:rotate-90 "
-//           onClick={() => {
-//             setClickBurg(true);
-//           }}
-//         />
-//       )}
-//       {/* {clickBurg && (
-//         <div className="bg-black w-56 h-full flex flex-col justify-center items-center absolute top-0 left-0">
-//           <h1
-//             style={{
-//               fontFamily: "Mars",
-//               fontSize: "30px",
-//               color: "#fff",
-//               height: "40px",
-//               marginBottom: "40px",
-//             }}
-//           >
-//             MARS
-//           </h1>
-//           <NavLinks />
-//         </div>
-//       )} */}
-//     </div>
-//   );
-// };
-
 const SideBar = () => {
-  const [isMobile, setIsMobile] = React.useState(true);
+  const [isMobile, setIsMobile] = React.useState(false);
+  // React.useEffect(() => {
+  //   if (window.innerWidth < 900) {
+  //     setIsMobile(true);
+  //   } else {
+  //     setIsMobile(false);
+  //   }
+  // }, [isMobile]);
 
   return (
     <>
-      {isMobile ? (
-        <MobileLayout setIsMobile={setIsMobile} />
-      ) : (
-        <div className="bg-black w-56 h-full flex flex-col justify-center items-center">
-          <h1
-            style={{
-              fontFamily: "Mars",
-              fontSize: "30px",
-              color: "#fff",
-              height: "40px",
-              marginBottom: "40px",
-            }}
-          >
-            MARS
-          </h1>
-          <NavLinks />
-        </div>
-      )}
+      <div className="bg-black w-56 h-full hidden flex-col justify-center items-center sm:flex">
+        <h1
+          style={{
+            fontFamily: "Mars",
+            fontSize: "30px",
+            color: "#fff",
+            height: "40px",
+            marginBottom: "40px",
+          }}
+        >
+          MARS
+        </h1>
+        <NavLinks />
+      </div>
+      <MobileLayout setIsMobile={setIsMobile} />
     </>
   );
 };
