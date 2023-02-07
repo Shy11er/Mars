@@ -19,7 +19,7 @@ const TopCharts = () => {
       <div className="w-full h-full flex flex-col">
         {items.map((item, index) => (
           <div key={index} className="flex flex-row items-center my-2">
-            <h2>1.</h2>
+            <h2>{item}.</h2>
             <img
               className="w-16 h-16 mx-3"
               src="https://images.genius.com/d902a0a48c2e7d097f2805c32d782fc9.640x640x1.jpg"
