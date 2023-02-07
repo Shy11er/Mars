@@ -12,7 +12,7 @@ const items = [1, 2, 3, 4, 5];
 
 const TopArtists = () => {
   return (
-    <div className="flex flex-col p-3 max-w-[400px] m-5">
+    <div className="flex flex-col p-3 min-w-[400px] m-5">
       <div className="flex flex-row justify-between">
         <h1 className="text-2xl font-bold flex items-center">Top Artists</h1>
         <Link
