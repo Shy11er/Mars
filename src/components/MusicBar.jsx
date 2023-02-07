@@ -1,5 +1,6 @@
 import React from "react";
 import Music from "./Music";
+import { ImVolumeMute2, ImVolumeLow, ImVolumeMedium } from "react-icons/im";
 
 const MusicBar = () => {
   return (
@@ -16,7 +17,9 @@ const MusicBar = () => {
         </div>
       </div>
       <Music />
-      <div className="volume"></div>
+      <div className="flex flex-row">
+        <ImVolumeMedium className="text-cyan-400 h-10 w-10 cursor-pointer mx-10" />
+      </div>
     </div>
   );
 };

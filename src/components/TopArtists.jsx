@@ -28,8 +28,6 @@ const TopArtists = () => {
         spaceBetween={5}
         slidesPerView={4}
         mousewheel
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
           <img
