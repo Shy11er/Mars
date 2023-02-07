@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import MusicCard from "./components/MusicCard";
+import MusicBar from "./components/MusicBar";
 import Search from "./components/Search";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
@@ -14,6 +14,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <MusicBar />
     </div>
   );
 }

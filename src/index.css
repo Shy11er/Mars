@@ -46,7 +46,8 @@ body {
 }
 
 .music-cards::-webkit-scrollbar-thumb {
-  background-color: #010177ad;
+  /* background-color: #010177ad; */
+  background-color: transparent;
   border-radius: 20px;
 }
 
@@ -55,6 +56,6 @@ body {
 }
 
 .home-page::-webkit-scrollbar-thumb {
-  background-color: #010177ad;
+  background-color: transparent;
   border-radius: 20px;
 }
