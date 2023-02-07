@@ -33,42 +33,42 @@ const TopArtists = () => {
       >
         <SwiperSlide>
           <img
-            className="rounded-full w-20 h-20"
+            className="rounded-full w-20 h-20 cursor-pointer"
             src="https://images.genius.com/d902a0a48c2e7d097f2805c32d782fc9.640x640x1.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded-full w-20 h-20"
+            className="rounded-full w-20 h-20 cursor-pointer"
             src="https://images.genius.com/d902a0a48c2e7d097f2805c32d782fc9.640x640x1.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded-full w-20 h-20"
+            className="rounded-full w-20 h-20 cursor-pointer"
             src="https://images.genius.com/d902a0a48c2e7d097f2805c32d782fc9.640x640x1.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded-full w-20 h-20"
+            className="rounded-full w-20 h-20 cursor-pointer"
             src="https://images.genius.com/d902a0a48c2e7d097f2805c32d782fc9.640x640x1.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded-full w-20 h-20"
+            className="rounded-full w-20 h-20 cursor-pointer"
             src="https://images.genius.com/d902a0a48c2e7d097f2805c32d782fc9.640x640x1.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="rounded-full w-20 h-20"
+            className="rounded-full w-20 h-20 cursor-pointer"
             src="https://images.genius.com/d902a0a48c2e7d097f2805c32d782fc9.640x640x1.jpg"
             alt=""
           />

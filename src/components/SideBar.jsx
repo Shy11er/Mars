@@ -20,7 +20,7 @@ export const NavLinks = () => {
           <obj.icon
             className={`w-6 h-6 mr-2 ${isActive === index && "text-cyan-400"}`}
           />
-          <p className={`${isActive === index && "text-cyan-400"}`}>
+          <p className={`${isActive === index && "text-cyan-400"} text-xl`}>
             {obj.name}
           </p>
         </Link>
@@ -30,18 +30,9 @@ export const NavLinks = () => {
 };
 
 const SideBar = () => {
-  const [isMobile, setIsMobile] = React.useState(false);
-  // React.useEffect(() => {
-  //   if (window.innerWidth < 900) {
-  //     setIsMobile(true);
-  //   } else {
-  //     setIsMobile(false);
-  //   }
-  // }, [isMobile]);
-
   return (
     <>
-      <div className="bg-black w-56 h-full hidden flex-col justify-center items-center sm:flex">
+      <div className="bg-black w-72 h-full hidden flex-col justify-center items-center md:flex">
         <h1
           style={{
             fontFamily: "Mars",
@@ -55,7 +46,7 @@ const SideBar = () => {
         </h1>
         <NavLinks />
       </div>
-      <MobileLayout setIsMobile={setIsMobile} />
+      <MobileLayout />
     </>
   );
 };
