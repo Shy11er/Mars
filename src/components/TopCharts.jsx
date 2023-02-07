@@ -6,7 +6,7 @@ const items = [1, 2, 3, 4, 5];
 
 const TopCharts = () => {
   return (
-    <div className="flex flex-col p-3 w-5/12 h-1/2">
+    <div className="flex flex-col p-3 max-w-[400px] max-h-[500px] m-5">
       <div className="flex flex-row justify-between mb-3">
         <h1 className="text-2xl font-bold flex items-center">Top Charts</h1>
         <Link
@@ -17,8 +17,8 @@ const TopCharts = () => {
         </Link>
       </div>
       <div className="w-full h-full flex flex-col">
-        {items.map((item, obj) => (
-          <div className="flex flex-row items-center my-2">
+        {items.map((item, index) => (
+          <div key={index} className="flex flex-row items-center my-2">
             <h2>1.</h2>
             <img
               className="w-16 h-16 mx-3"
