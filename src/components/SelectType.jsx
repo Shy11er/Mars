@@ -13,7 +13,12 @@ const SelectType = () => {
 
   return (
     <div className="relative w-28 z-10">
-      <div className="w-full absolute bg-black rounded-sm color-white flex flex-row justify-between items-center p-2">
+      <div
+        onClick={() => {
+          setIsActive(!isActive);
+        }}
+        className="w-full absolute bg-black rounded-sm color-white flex flex-row justify-between items-center p-2 cursor-pointer"
+      >
         <p>{currentGenre}</p>
         <IoIosArrowDown
           onClick={() => {

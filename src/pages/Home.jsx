@@ -14,12 +14,14 @@ const Home = () => {
 
   return (
     <div className="w-full h-full flex flex-nowrap align-start xl:flex-row flex-col-reverse overflow-auto home-page">
-      <div className="flex flex-col">
-        <div className="flex flex-row justify-between m-4">
-          <h1 className="text-4xl font-bold tracking-widest">Discover</h1>
+      <div className="flex flex-col items-center xl:items-stretch">
+        <div className="flex flex-col justify-between items-center xl:m-4 xl:flex-row">
+          <h1 className="text-4xl font-bold tracking-widest my-5 xl:m-0">
+            Discover
+          </h1>
           <SelectType />
         </div>
-        <div className="flex flex-wrap xl:justify-start xl:content-start justify-center xl:overflow-auto music-cards pb-12 ">
+        <div className="flex flex-wrap xl:justify-start xl:content-start justify-center xl:overflow-auto music-cards pb-12 mt-20 xl:mt-0 ">
           <MusicCard />
           <MusicCard />
           <MusicCard />
