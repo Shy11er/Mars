@@ -7,7 +7,6 @@ import { BsShuffle } from "react-icons/bs";
 const Music = () => {
   const [prog, setProg] = React.useState(0);
 
-  
 
   return (
     <div className="flex flex-col">

@@ -9,7 +9,7 @@ export default function App() {
     <div className="relative flex h-full w-full">
       <Sidebar />
       <div className="w-full h-full">
-        <Search />
+          <Search />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

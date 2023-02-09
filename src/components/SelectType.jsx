@@ -1,10 +1,45 @@
-import React from 'react'
-import { genres } from '../assets/constants'
+import React from "react";
+import { genres } from "../assets/constants";
+import { IoIosArrowDown } from "react-icons/io";
 
 const SelectType = () => {
-  return (
-    <div className="w-20 h-8 "></div>
-  )
-}
+  const [currentGenre, setCurrentGenre] = React.useState("pop");
+  const [isActive, setIsActive] = React.useState(false);
 
-export default SelectType
+  const onChangeGen = (item) => {
+    setCurrentGenre(item.title);
+    setIsActive(false);
+  };
+
+  return (
+    <div className="relative w-28 z-10">
+      <div className="w-full absolute bg-black rounded-sm color-white flex flex-row justify-between items-center p-2">
+        <p>{currentGenre}</p>
+        <IoIosArrowDown
+          onClick={() => {
+            setIsActive(!isActive);
+          }}
+          className={`cursor-pointer ${isActive && "rotate-180"}`}
+          size={18}
+        />
+      </div>
+      {isActive && (
+        <div className="w-full absolute top-10 flex flex-col p-2 bg-black">
+          {genres.map((obj, index) => (
+            <div
+              key={index}
+              className="cursor-pointer hover:text-cyan-400"
+              onClick={() => {
+                onChangeGen(obj);
+              }}
+            >
+              {obj.title}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default SelectType;
