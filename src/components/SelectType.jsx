@@ -3,7 +3,7 @@ import { genres } from "../assets/constants";
 import { IoIosArrowDown } from "react-icons/io";
 
 const SelectType = () => {
-  const [currentGenre, setCurrentGenre] = React.useState("pop");
+  const [currentGenre, setCurrentGenre] = React.useState(genres[0].title);
   const [isActive, setIsActive] = React.useState(false);
 
   const onChangeGen = (item) => {

@@ -6,22 +6,19 @@ export const fetchMusics = createAsyncThunk(
   async () => {
     const options = {
       method: "GET",
-      url: "https://shazam-core.p.rapidapi.com/v1/search/multi",
-      params: { query: "metallica", search_type: "SONGS_ARTISTS" },
       headers: {
         "X-RapidAPI-Key": "fbca8a04f8msh354fe5934e12c41p1345bdjsndfb2375ea4c9",
         "X-RapidAPI-Host": "shazam-core.p.rapidapi.com",
       },
     };
 
-    axios
-      .request(options)
-      .then(function (response) {
-        console.log(response.data);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
+    fetch(
+      "https://shazam-core.p.rapidapi.com/v1/search/multi?query=metallica&search_type=SONGS_ARTISTS",
+      options
+    )
+      .then((response) => response.json())
+      .then((response) => console.log(response))
+      .catch((err) => console.error(err));
   }
 );
 

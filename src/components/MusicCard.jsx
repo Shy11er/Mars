@@ -7,7 +7,7 @@ const MusicCard = ({
   gang = "10AGE",
 }) => {
   return (
-    <div className="w-60 p-3 rounded-xl bg-gradient-to-tl from-white/10 to-[#483d8b] backdrop-blur-lg m-3 relative">
+    <div className="w-60 p-3 rounded-xl bg-[#2b2d8dc5] m-3 relative">
       <div className="bg-[#000] w-[216px] h-[216px] z-10 absolute top-3 left-1.2 hover:opacity-70 opacity-0 flex justify-center items-center">
         <AiFillPlayCircle
           size={40}
